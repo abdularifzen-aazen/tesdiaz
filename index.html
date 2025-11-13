@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyBell • Pendamping Belajar</title>
+  <meta name="theme-color" content="#f5f6fa">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>🎓 StudyBell — Pendamping Belajar</header>
+
+  <main>
+
+    <button id="stopBtn" onclick="stopAlarm()">🔇 Stop Alarm</button>
+
+    <div id="clock"></div>
+
+    <div id="stats">
+      Level: <span id="level">1</span> • Poin: <span id="points">0</span>
+    </div>
+
+    <h2>📘 Jadwal Belajar</h2>
+    <input type="text" id="subject" placeholder="Mata pelajaran">
+    <input type="number" id="duration" placeholder="Durasi (menit)">
+    <input type="time" id="studyTime">
+    <button onclick="addStudy()">Tambah Jadwal</button>
+    <div id="studyList"></div>
+
+    <h2>📝 Daftar Tugas</h2>
+    <input type="text" id="taskInput" placeholder="Tugas baru...">
+    <input type="date" id="taskDate">
+    <input type="time" id="taskTime">
+    <select id="taskDay">
+    <option value="">Pilih Hari</option>
+    <option value="0">Minggu</option>
+    <option value="1">Senin</option>
+    <option value="2">Selasa</option>
+    <option value="3">Rabu</option>
+    <option value="4">Kamis</option>
+    <option value="5">Jumat</option>
+    <option value="6">Sabtu</option>
+
+
+      
+    </select>
+    <button onclick="addTask()">Tambah</button>
+    <ul id="taskList"></ul>
+
+    <h2>⏱ Mode Fokus </h2>
+    <button onclick="startPomodoro()">Mulai Fokus 60 menit</button>
+    <div id="pomodoroStatus"></div>
+
+    <h2>💡 Motivasi</h2>
+    <div id="quoteBox"></div>
+    <button onclick="showQuote()">Ganti Motivasi</button>
+
+  </main>
+
+  <div id="toast"></div>
+
+<script src="script.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
